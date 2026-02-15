@@ -22,6 +22,12 @@ st.write("Upload test data (CSV) and select a trained model to evaluate.")
 # -----------------------------
 scaler = joblib.load("model/scaler.pkl")
 
+# Feature columns
+feature_columns = [
+    "age","sex","cp","trestbps","chol","fbs","restecg",
+    "thalach","exang","oldpeak","slope","ca","thal"
+]
+
 # -----------------------------
 # Model Selection
 # -----------------------------
